@@ -131,7 +131,8 @@ ul, ol { padding: 0; list-style: none; }
   bottom: 26px;
   padding: 6px 16px;
   font: 900 2.25rem/1 var(--sans);
-  letter-spacing: 0.12em;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
   color: var(--stamp);
   border: 4px double var(--stamp);
   border-radius: 8px;
