@@ -22,4 +22,10 @@ python3 -m http.server 8777   # then open http://localhost:8777
 
 It's served from DigitalOcean App Platform as a static site; every push to `main` deploys.
 
+## License
+
+Copyright © 2026 Drei Guintu. The code is free software under the [GNU GPL v3](LICENSE): if you can build it, it's yours. We sell the app built, signed and kept up to date.
+
+The GPL covers the code, not the name or the icons. "Seven and Done", "$7&D" and the 7 icon are ours.
+
 A [drei.gg](https://drei.gg) project. Thought of on 9 November 2026.
