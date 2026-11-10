@@ -1,0 +1,46 @@
+/* Import this file, then apply .sd-theme to a surface. Auto follows the OS.
+   Set data-theme="light" or "dark" on the same surface for an explicit edition. */
+@font-face {
+  font-family: "SD Poster";
+  src: url("fonts/barlow-black.woff2") format("woff2");
+  font-weight: 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SD Poster";
+  src: url("fonts/barlow-black-italic.woff2") format("woff2");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SD Sans";
+  src: url("fonts/sans.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SD Mono";
+  src: url("fonts/mono.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+.sd-theme {
+  color-scheme: light dark;
+  --sd-paper: light-dark(#f3efe6, #121110);
+  --sd-card: light-dark(#fffdf8, #1c1a18);
+  --sd-ink: light-dark(#161513, #eee9df);
+  --sd-muted: light-dark(#55504a, #a8a196);
+  --sd-inset: light-dark(#e6e0d2, #2a2723);
+  --sd-red: light-dark(#d11f16, #ff5d50);
+  --sd-on-red: light-dark(#fffdf8, #121110);
+  --sd-display: "SD Poster", Impact, sans-serif;
+  --sd-sans: "SD Sans", system-ui, sans-serif;
+  --sd-mono: "SD Mono", ui-monospace, monospace;
+  --sd-rule: 2px solid var(--sd-ink);
+  --sd-shadow: 4px 4px 0 var(--sd-ink);
+  background: var(--sd-paper);
+  color: var(--sd-ink);
+}
+.sd-theme[data-theme="light"] { color-scheme: light; }
+.sd-theme[data-theme="dark"] { color-scheme: dark; }

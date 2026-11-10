@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" role="img" aria-label="Seven and Done price tag">
+  <path fill-rule="evenodd" fill="#d11f16" d="M3 23 23 3H77V57L57 77H3Z M28 16a4 4 0 1 0 -8 0a4 4 0 1 0 8 0Z"/>
+  <path transform="translate(13 24) scale(0.46)" fill="#fffdf8" fill-rule="evenodd" d="M5 7H80L77 26L41 68L13 72L48 30H21L17 37H0Z M7.2 79L35 75L23.9 88H-.3Z"/>
+  <path transform="translate(47 24) scale(0.46)" fill="#fffdf8" fill-rule="evenodd" d="M12 7H39L26.7 67.1L6 70.1Z M5.4 77.1L25.3 74.2L22.5 88H4.4Z"/>
+</svg>
