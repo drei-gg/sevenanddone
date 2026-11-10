@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Seven and Done</title>
-<meta name="description" content="Simple apps, paid for once. Seven apps, about seven engineering days each, a seven-day trial, $7 once, and an update at least every seven months.">
+<meta name="description" content="A small software protest against subscriptions. Simple apps, $7 once, a seven-day trial, an update at least every seven months.">
 <meta property="og:title" content="$7&amp;D — Seven and Done">
-<meta property="og:description" content="Simple apps, paid for once. No subscriptions, no ads, no accounts, no tracking.">
+<meta property="og:description" content="Stop renting solved apps. Simple apps, paid for once. No subscriptions, no ads, no accounts, no tracking.">
 <meta property="og:url" content="https://sevenanddone.drei.gg/">
 <meta property="og:type" content="website">
 <meta name="color-scheme" content="light dark">
@@ -15,163 +15,166 @@
 </head>
 <body>
 
+<input class="theme-radio" type="radio" name="theme" id="t-auto" checked aria-label="Theme: follow system">
+<input class="theme-radio" type="radio" name="theme" id="t-light" aria-label="Theme: light">
+<input class="theme-radio" type="radio" name="theme" id="t-dark" aria-label="Theme: dark">
+
 <header class="top wrap">
-  <a class="mark" href="/" aria-label="Seven and Done, home">$7&amp;D</a>
-  <span class="top-note">a <a href="https://drei.gg">drei.gg</a> project</span>
+  <a class="brand" href="/" aria-label="Seven and Done, home">
+    <span class="from">drei.gg</span><span class="bar" aria-hidden="true"></span><svg class="wm mark" viewBox="92 203 1899 386" aria-hidden="true" focusable="false"><g class="red" fill-rule="evenodd"><path class="ink" d="M281 214H378L354 265H428L452 214H550L526 265H564L517 364H478L453 418H491L444 517H408L384 571H286L311 517H236L212 571H113L138 517H100L146 418H184L209 364H171L217 266H257Z M306 364L281 418H355L380 364Z"/><path d="M711 211H805L804 217H889L860 316H689C674 316 664 320 664 329C664 337 670 342 684 342H770C826 342 855 366 855 413C855 491 801 566 715 566L710 581H613L616 570H523L554 468H731C745 468 754 462 754 453C754 444 747 439 735 439H647C596 439 564 418 563 374C561 300 622 222 706 221Z"/><path d="M924 217H1199L987 571H876L1036 317H895Z"/><path transform="translate(1148 217) scale(3.52)" d="M89.587 100H56.644L52.316 94.139Q39.559 101.25 25.5 101.25Q12.145 101.25 2.483 94.049Q-9.25 85.306 -9.25 71.2Q-9.25 56.949 3.268 45.435Q7.031 41.974 12.598 38.328Q10.75 33.293 10.75 28Q10.75 14.377 21.914 6.19Q31.378 -0.75 46 -0.75H76.91L69.49 25.75H46Q40.054 25.75 37.586 27.56Q37.25 27.806 37.25 28Q37.25 30.101 42.615 36.441Q42.898 36.776 43.159 37.129L56.633 55.375Q59.942 51.149 63.213 46H93.759Q83.854 64.824 72.775 77.234ZM36.325 72.484 27.348 60.328Q17.25 66.87 17.25 71.2Q17.25 72.005 18.317 72.801Q20.933 74.75 25.5 74.75Q30.959 74.75 36.325 72.484Z"/><path d="M1553 217H1690C1766 217 1818 266 1818 345C1818 451 1717 571 1610 571H1477Z M1625 316L1591 470H1624C1668 470 1719 419 1719 373C1719 340 1698 316 1668 316Z"/><path class="ink" d="M1880 217H1983L1926 447H1826Z M1874 472C1898 472 1913 488 1913 512C1913 544 1881 575 1850 575C1824 575 1808 559 1808 535C1808 503 1841 472 1874 472Z"/></g></svg>
+  </a>
+  <nav class="nav" aria-label="Sections">
+    <a href="/manifesto/">Manifesto</a>
+    <a href="/#apps">Apps</a>
+    <span class="theme" role="group" aria-label="Colour theme"><label for="t-auto">Auto</label><label for="t-light">Light</label><label for="t-dark">Dark</label></span>
+    <a class="btn btn-red btn-sm" href="https://github.com/drei-gg/sevenanddone">Source</a>
+  </nav>
 </header>
+
+<div class="masthead wrap" aria-hidden="true">
+  <span>Vol. 01</span>
+  <span class="sep"></span>
+  <span>The Seven and Done edition</span>
+  <span class="sep"></span>
+  <span>A drei.gg imprint</span>
+</div>
 
 <main>
 
-<section class="hero wrap">
-  <div class="hero-copy">
-    <h1>Seven<br>and Done.</h1>
-    <p class="lede">Simple apps, paid for once.</p>
-    <p>Somewhere right now, someone is paying <strong>$7.99 a week</strong> to delete duplicate photos from their own phone. That&rsquo;s $415 a year, for work their phone does by itself.</p>
-    <p>We think that&rsquo;s absurd. So here&rsquo;s the deal.</p>
-  </div>
-
-  <figure class="receipt" aria-label="A receipt: one app, seven dollars, paid in full">
-    <div class="receipt-body">
-      <p class="r-head">SEVEN AND DONE</p>
-      <p class="r-sub">RECEIPT No. 0001 · 09 NOV 2026</p>
-      <ul class="r-lines">
-        <li><span>1 × app</span><i></i><span>$7.00</span></li>
-        <li><span>Trial, 7 days</span><i></i><span>$0.00</span></li>
-        <li><span>Subscription</span><i></i><span>none</span></li>
-        <li><span>Weekly fee</span><i></i><span>none</span></li>
-        <li><span>Auto-renew</span><i></i><span>never</span></li>
-        <li><span>Updates, every 7 mo.</span><i></i><span>incl.</span></li>
-      </ul>
-      <p class="r-total"><span>TOTAL</span><span>$7.00</span></p>
-      <p class="r-foot">Paid once. Yours to keep.</p>
+<section class="hero">
+  <div class="hero-in wrap">
+    <div class="hero-main">
+      <h1 class="wordmark"><svg class="wm hero-wm" viewBox="92 203 1899 386" role="img" aria-label="Seven and Done"><g class="red" fill-rule="evenodd"><path class="ink" d="M281 214H378L354 265H428L452 214H550L526 265H564L517 364H478L453 418H491L444 517H408L384 571H286L311 517H236L212 571H113L138 517H100L146 418H184L209 364H171L217 266H257Z M306 364L281 418H355L380 364Z"/><path d="M711 211H805L804 217H889L860 316H689C674 316 664 320 664 329C664 337 670 342 684 342H770C826 342 855 366 855 413C855 491 801 566 715 566L710 581H613L616 570H523L554 468H731C745 468 754 462 754 453C754 444 747 439 735 439H647C596 439 564 418 563 374C561 300 622 222 706 221Z"/><path d="M924 217H1199L987 571H876L1036 317H895Z"/><path transform="translate(1148 217) scale(3.52)" d="M89.587 100H56.644L52.316 94.139Q39.559 101.25 25.5 101.25Q12.145 101.25 2.483 94.049Q-9.25 85.306 -9.25 71.2Q-9.25 56.949 3.268 45.435Q7.031 41.974 12.598 38.328Q10.75 33.293 10.75 28Q10.75 14.377 21.914 6.19Q31.378 -0.75 46 -0.75H76.91L69.49 25.75H46Q40.054 25.75 37.586 27.56Q37.25 27.806 37.25 28Q37.25 30.101 42.615 36.441Q42.898 36.776 43.159 37.129L56.633 55.375Q59.942 51.149 63.213 46H93.759Q83.854 64.824 72.775 77.234ZM36.325 72.484 27.348 60.328Q17.25 66.87 17.25 71.2Q17.25 72.005 18.317 72.801Q20.933 74.75 25.5 74.75Q30.959 74.75 36.325 72.484Z"/><path d="M1553 217H1690C1766 217 1818 266 1818 345C1818 451 1717 571 1610 571H1477Z M1625 316L1591 470H1624C1668 470 1719 419 1719 373C1719 340 1698 316 1668 316Z"/><path class="ink" d="M1880 217H1983L1926 447H1826Z M1874 472C1898 472 1913 488 1913 512C1913 544 1881 575 1850 575C1824 575 1808 559 1808 535C1808 503 1841 472 1874 472Z"/></g></svg></h1>
+      <p class="tagline">A small software protest against predatory subscriptions.</p>
+      <div class="cta">
+        <a class="btn btn-red" href="/manifesto/">Read the manifesto →</a>
+        <a class="btn" href="#apps">See the apps</a>
+        <a class="btn" href="/manifesto/#sevens">Why $7?</a>
+      </div>
     </div>
-    <span class="stamp" aria-hidden="true">#$7&amp;D!</span>
-  </figure>
+    <div class="slot">
+      <figure class="field" aria-hidden="true">
+        <svg class="defs" width="0" height="0" aria-hidden="true" focusable="false">
+      <filter id="halftone" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+        <feColorMatrix in="SourceGraphic" type="matrix" values="0.3 0.59 0.11 0 0  0.3 0.59 0.11 0 0  0.3 0.59 0.11 0 0  0 0 0 1 0" result="lum"/>
+        <feComponentTransfer in="lum" result="thr"><feFuncR type="linear" slope="40" intercept="-19.5"/></feComponentTransfer>
+        <feColorMatrix in="thr" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -1 0 0 0 1" result="inkA"/>
+        <feFlood style="flood-color: var(--ink)" result="inkC"/>
+        <feComposite in="inkC" in2="inkA" operator="in" result="ink"/>
+        <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  8 -8 0 0 -1.2" result="redA"/>
+        <feFlood style="flood-color: var(--red)" result="redC"/>
+        <feComposite in="redC" in2="redA" operator="in" result="redS"/>
+        <feComposite in="redS" in2="inkA" operator="in" result="red"/>
+        <feComposite in="ink" in2="redS" operator="out" result="inkOnly"/>
+        <feMerge result="both"><feMergeNode in="inkOnly"/><feMergeNode in="red"/></feMerge>
+        <feComposite in="both" in2="SourceAlpha" operator="in"/>
+      </filter>
+    </svg>
+        <div class="scene">
+        <div class="plate"><svg class="glyph" viewBox="0 0 100 100" aria-hidden="true">
+          <g fill="#6e6e6e">
+            <path fill-rule="evenodd" d="M4 4h30v30H4zM10 10v18h18V10z"/><rect x="14" y="14" width="10" height="10"/>
+            <path fill-rule="evenodd" d="M66 4h30v30H66zM72 10v18h18V10z"/><rect x="76" y="14" width="10" height="10"/>
+            <path fill-rule="evenodd" d="M4 66h30v30H4zM10 72v18h18V72z"/><rect x="14" y="76" width="10" height="10"/>
+          </g>
+          <g fill="#8a8a8a"><rect x="42" y="6" width="8" height="8"/><rect x="54" y="10" width="8" height="8"/><rect x="42" y="22" width="8" height="8"/><rect x="6" y="42" width="8" height="8"/><rect x="18" y="46" width="8" height="8"/><rect x="42" y="42" width="8" height="8"/><rect x="54" y="38" width="8" height="8"/><rect x="66" y="42" width="8" height="8"/><rect x="90" y="42" width="6" height="8"/><rect x="42" y="58" width="8" height="8"/><rect x="42" y="74" width="8" height="8"/><rect x="54" y="86" width="8" height="8"/><rect x="66" y="58" width="8" height="8"/></g>
+          <rect x="74" y="74" width="20" height="20" fill="#ff4d42"/>
+        </svg></div>
+        </div>
+      </figure>
+      <p class="slot-cap"><span>Next off the shelf</span><b>No. 3 · QR</b><i>building</i></p>
+    </div>
+  </div>
+  
 </section>
 
-<section class="rates wrap" aria-labelledby="rates-h">
-  <h2 id="rates-h">The going rate</h2>
-  <p class="section-lede">What the top apps in a few very simple categories charge today.</p>
-  <ul class="rate-grid">
-    <li>
-      <p class="rate"><span class="amt">$7.99</span><span class="per">/ week</span></p>
-      <p class="for">to clean duplicate photos off your own phone</p>
-      <p class="year">$415 a year</p>
-    </li>
-    <li>
-      <p class="rate"><span class="amt">$14.99</span><span class="per">/ week</span></p>
-      <p class="for">to turn a photo of a page into a PDF</p>
-      <p class="year">$779 a year</p>
-    </li>
-    <li>
-      <p class="rate"><span class="amt">$6.99</span><span class="per">/ week</span></p>
-      <p class="for">to change the channel on your TV</p>
-      <p class="year">$363 a year</p>
-    </li>
-    <li>
-      <p class="rate"><span class="amt">$14.95</span></p>
-      <p class="for">to unlock a QR code reader</p>
-      <p class="year">your camera reads them free</p>
-    </li>
-  </ul>
-  <p class="source">Prices listed on the US App Store, checked 9 November 2026. Weekly plans × 52 weeks.</p>
+<section class="beat wrap" aria-labelledby="beat-h">
+  <h2 id="beat-h" class="beat-h">Stop renting<br>solved apps.</h2>
+  <div class="beat-copy">
+    <p class="beat-lede">Simple, useful tools shouldn&rsquo;t come with a recurring bill.</p>
+    <p>#$7&amp;D! (Seven and Done) is a shelf of small apps. Each one replaces something that bills you every week for a job your phone mostly does already. Ours cost $7. Once. You own it, you use it, you move on.</p>
+  </div>
 </section>
 
-<section class="sevens wrap" aria-labelledby="sevens-h">
-  <h2 id="sevens-h">The Sevens</h2>
-  <p class="section-lede">And the fine print, in the same size type.</p>
-
-  <ol class="seven-list">
+<section class="strip wrap" aria-label="What you get">
+  <ul class="six">
     <li>
-      <p class="num" aria-hidden="true">7</p>
-      <div class="promise">
-        <h3>apps</h3>
-        <p>We start with seven small apps, each one replacing something that charges you rent.</p>
-      </div>
-      <div class="fine">
-        <p class="fine-label">Fine print</p>
-        <p>Seven is where we start, not where we stop. The line grows for as long as there are subscriptions worth retiring.</p>
-      </div>
+      <svg viewBox="0 0 64 64" aria-hidden="true"><path class="fill-red" d="M6 32 30 8h26v26L32 58Z"/><circle class="fill-paper" cx="46" cy="18" r="4"/><text x="31" y="41" transform="rotate(-45 31 41)" text-anchor="middle">$7</text></svg>
+      <h3>$7. Done.</h3>
+      <p>That&rsquo;s the whole price.</p>
     </li>
     <li>
-      <p class="num" aria-hidden="true">7</p>
-      <div class="promise">
-        <h3>engineering days</h3>
-        <p>Each app is scoped to about seven days of engineering. Small on purpose, and done when it does its job.</p>
-      </div>
-      <div class="fine">
-        <p class="fine-label">Fine print</p>
-        <p>It&rsquo;s a measure of effort, not a stopwatch. One app takes three, another takes ten. Seven is the budget we scope to, and the build log says when we go over.</p>
-      </div>
+      <svg viewBox="0 0 64 64" aria-hidden="true"><rect class="line" x="10" y="8" width="44" height="20" rx="3"/><rect class="line" x="10" y="36" width="44" height="20" rx="3"/><path class="dots" d="M18 18h.01M26 18h.01M18 46h.01M26 46h.01"/><path class="line-red" d="M6 60 58 4"/></svg>
+      <h3>No servers.</h3>
+      <p>We don&rsquo;t run a backend for your phone to call.</p>
     </li>
     <li>
-      <p class="num" aria-hidden="true">7</p>
-      <div class="promise">
-        <h3>day trial</h3>
-        <p>Use the whole app free for a week. When the week ends, it asks. It never bills you on its own.</p>
-      </div>
-      <div class="fine">
-        <p class="fine-label">Fine print</p>
-        <p>The clock starts when you install. There&rsquo;s no sign-up to start it, no card up front, and no charge at the end you didn&rsquo;t choose.</p>
-      </div>
+      <svg viewBox="0 0 64 64" aria-hidden="true"><path class="fill-red" d="M36 4 12 36h18l-4 24 26-34H34Z"/></svg>
+      <h3>Built fast.</h3>
+      <p>About seven engineering days each. Small on purpose.</p>
     </li>
     <li>
-      <p class="num" aria-hidden="true">$7</p>
-      <div class="promise">
-        <h3>once</h3>
-        <p>Pay once, keep it. No subscriptions, no weekly fees, no &ldquo;Pro&rdquo; tier waiting behind the paywall.</p>
-      </div>
-      <div class="fine">
-        <p class="fine-label">Fine print</p>
-        <p>$7 is the US price. Where seven of your currency is worth more, it&rsquo;s that: &euro;7, &pound;7. Where $7 is a lot of money, it costs less.</p>
-      </div>
+      <svg viewBox="0 0 64 64" aria-hidden="true"><rect class="line" x="16" y="4" width="32" height="56" rx="6"/><path class="line" d="M28 11h8"/><path class="line-red" d="m24 32 6 7 11-14"/></svg>
+      <h3>Your phone may already do it.</h3>
+      <p>We&rsquo;ll say so up front. Then you keep your $7.</p>
     </li>
     <li>
-      <p class="num" aria-hidden="true">7</p>
-      <div class="promise">
-        <h3>month updates</h3>
-        <p>Every app gets at least one update every seven months, for as long as we&rsquo;re around.</p>
-      </div>
-      <div class="fine">
-        <p class="fine-label">Fine print</p>
-        <p>The cycle is for chores: new OS versions, toolchain updates, the dull work that keeps an app alive. Critical bugs and security fixes ship when they&rsquo;re found, not when the calendar says. New features are a bonus, and supporters can help fund them. Whatever they fund ships to everyone who owns the app.</p>
-      </div>
+      <svg viewBox="0 0 64 64" aria-hidden="true"><path class="line" d="m20 18-14 14 14 14M44 18l14 14-14 14"/><path class="line-red" d="m37 12-10 40"/></svg>
+      <h3>Source available.</h3>
+      <p>GPL-3.0. Build it yourself if you&rsquo;d rather.</p>
     </li>
-  </ol>
-</section>
-
-<section class="done wrap" aria-labelledby="done-h">
-  <h2 id="done-h">Done means done</h2>
-  <p class="section-lede">Each app does its one job well, then stops growing. Here&rsquo;s what none of them will ever have.</p>
-  <ul class="nos">
-    <li><strong>No subscriptions.</strong> Not weekly, not yearly, not &ldquo;optional&rdquo;.</li>
-    <li><strong>No ads.</strong> You paid. That&rsquo;s the business model.</li>
-    <li><strong>No accounts.</strong> Nothing to sign up for, nothing to log into.</li>
-    <li><strong>No servers.</strong> Everything runs on your phone, so there&rsquo;s nothing for us to bill you monthly for.</li>
-    <li><strong>No tracking.</strong> No analytics, no third-party code. The apps collect nothing.</li>
-    <li><strong>No second paywall.</strong> $7 buys the whole app, not the right to see the next price.</li>
+    <li>
+      <svg viewBox="0 0 64 64" aria-hidden="true"><path class="line" d="M52 22A22 22 0 1 0 54 36"/><path class="line" d="M54 8v16H38"/><path class="line-red" d="M6 60 58 4"/></svg>
+      <h3>Nothing renews.</h3>
+      <p>Pay once. Use it. Move on.</p>
+    </li>
   </ul>
 </section>
 
-<section class="shelf wrap" aria-labelledby="shelf-h">
-  <h2 id="shelf-h">The first seven</h2>
-  <p class="section-lede">A shortlist, picked by how much the worst offenders charge and how many people pay it. Each still has to pass the seven-day test.</p>
-  <ol class="shelf-grid">
-    <li><span class="no">No. 1</span><h3>Cleaner</h3><p>Clear duplicate photos, near-duplicates and giant videos.</p><span class="chip">vetting</span></li>
-    <li><span class="no">No. 2</span><h3>Scanner</h3><p>Pages to clean PDFs, with text you can search.</p><span class="chip">vetting</span></li>
-    <li><span class="no">No. 3</span><h3>QR</h3><p>Read and make QR codes, with a history you can find again.</p><span class="chip">vetting</span></li>
-    <li><span class="no">No. 4</span><h3>Remote</h3><p>Your TV, from your phone, over your own Wi-Fi.</p><span class="chip">vetting</span></li>
-    <li><span class="no">No. 5</span><h3>Ringtones</h3><p>Make your own from any audio you have.</p><span class="chip">vetting</span></li>
-    <li><span class="no">No. 6</span><h3>Recorder</h3><p>Record and transcribe, entirely on your phone.</p><span class="chip">vetting</span></li>
-    <li class="tbd"><span class="no">No. 7</span><h3>?</h3><p>Still deciding.</p><span class="chip">open</span></li>
+<section class="apps wrap" id="apps" aria-labelledby="apps-h">
+  <div class="sec-head">
+    <h2 id="apps-h" class="slab">The apps</h2>
+    <p class="kicker">Practical utilities. Fixed price. No subscriptions.</p>
+  </div>
+  <ol class="app-grid">
+    <li class="app"><span class="no">No. 1</span><h3><small>#$7&amp;D!</small>Cleaner</h3><span class="chip">Vetting</span><p class="what">Clear out duplicate photos, near-duplicates and giant videos.</p><p class="byb"><b>Before you buy:</b> Photos on your iPhone already has a Duplicates album. We&rsquo;ll say what we add before you pay.</p></li>
+    <li class="app"><span class="no">No. 2</span><h3><small>#$7&amp;D!</small>Scanner</h3><span class="chip">Vetting</span><p class="what">Pages to clean PDFs, with text you can search.</p><p class="byb"><b>Before you buy:</b> Notes and Files on your iPhone already scan documents to PDF.</p></li>
+    <li class="app live">
+      <svg class="qr" viewBox="0 0 48 48" aria-hidden="true"><path class="line" d="M6 6h14v14H6zM28 6h14v14H28zM6 28h14v14H6z"/><path class="fill-ink" d="M10 10h6v6h-6zM32 10h6v6h-6zM10 32h6v6h-6z"/><rect class="fill-red" x="30" y="30" width="10" height="10"/></svg>
+      <span class="no">No. 3</span><h3><small>#$7&amp;D!</small>QR</h3><span class="chip chip-live">Building</span><p class="what">Read and make QR codes. Warns you about scams, for free.</p><p class="byb"><b>Before you buy:</b> Your iPhone camera already reads QR codes. We add the scam check and a code maker.</p></li>
+    <li class="app"><span class="no">No. 4</span><h3><small>#$7&amp;D!</small>Remote</h3><span class="chip">Vetting</span><p class="what">Your TV, from your phone, over your own Wi-Fi.</p><p class="byb"><b>Before you buy:</b> Not checked yet. We&rsquo;ll say what your phone already does before we ask for $7.</p></li>
+    <li class="app"><span class="no">No. 5</span><h3><small>#$7&amp;D!</small>Ringtones</h3><span class="chip">Vetting</span><p class="what">Make your own from any audio you have.</p><p class="byb"><b>Before you buy:</b> Not checked yet. We&rsquo;ll say what your phone already does before we ask for $7.</p></li>
+    <li class="app"><span class="no">No. 6</span><h3><small>#$7&amp;D!</small>Recorder</h3><span class="chip">Vetting</span><p class="what">Record and transcribe, all on your phone.</p><p class="byb"><b>Before you buy:</b> Voice Memos on your iPhone already records. We&rsquo;ll say what we add.</p></li>
+    <li class="app open"><span class="no">No. 7</span><h3>?</h3><span class="chip">Open</span><p class="what">Still deciding.</p></li>
   </ol>
+</section>
+
+<section class="banner wrap" aria-label="The manifesto">
+  <a class="blob go" href="/manifesto/"><h2>The<br>Manifesto</h2></a>
+  <div>
+    <h2>Owning software shouldn&rsquo;t be a luxury.</h2>
+    <p>Why $7, what you get, and what we&rsquo;ll never do. The fine print is in the same size type as everything else.</p>
+  </div>
+  <a class="btn" href="/manifesto/">Read the manifesto →</a>
+</section>
+
+<section class="closer wrap" aria-label="Pay once">
+  <p>Pay for what you need.<br>Not forever. <em>Just once.</em></p>
 </section>
 
 </main>
 
 <footer class="foot wrap">
-  <p class="filed">Thought of on 9 November 2026. Filed from Aeris.</p>
-  <p>A <a href="https://drei.gg">drei.gg</a> project. This page has no scripts, cookies or trackers.</p>
+  <div class="foot-row">
+    <p class="foot-mark"><svg class="wm foot-wm" viewBox="92 203 1899 386" aria-hidden="true" focusable="false"><g class="red" fill-rule="evenodd"><path class="ink" d="M281 214H378L354 265H428L452 214H550L526 265H564L517 364H478L453 418H491L444 517H408L384 571H286L311 517H236L212 571H113L138 517H100L146 418H184L209 364H171L217 266H257Z M306 364L281 418H355L380 364Z"/><path d="M711 211H805L804 217H889L860 316H689C674 316 664 320 664 329C664 337 670 342 684 342H770C826 342 855 366 855 413C855 491 801 566 715 566L710 581H613L616 570H523L554 468H731C745 468 754 462 754 453C754 444 747 439 735 439H647C596 439 564 418 563 374C561 300 622 222 706 221Z"/><path d="M924 217H1199L987 571H876L1036 317H895Z"/><path transform="translate(1148 217) scale(3.52)" d="M89.587 100H56.644L52.316 94.139Q39.559 101.25 25.5 101.25Q12.145 101.25 2.483 94.049Q-9.25 85.306 -9.25 71.2Q-9.25 56.949 3.268 45.435Q7.031 41.974 12.598 38.328Q10.75 33.293 10.75 28Q10.75 14.377 21.914 6.19Q31.378 -0.75 46 -0.75H76.91L69.49 25.75H46Q40.054 25.75 37.586 27.56Q37.25 27.806 37.25 28Q37.25 30.101 42.615 36.441Q42.898 36.776 43.159 37.129L56.633 55.375Q59.942 51.149 63.213 46H93.759Q83.854 64.824 72.775 77.234ZM36.325 72.484 27.348 60.328Q17.25 66.87 17.25 71.2Q17.25 72.005 18.317 72.801Q20.933 74.75 25.5 74.75Q30.959 74.75 36.325 72.484Z"/><path d="M1553 217H1690C1766 217 1818 266 1818 345C1818 451 1717 571 1610 571H1477Z M1625 316L1591 470H1624C1668 470 1719 419 1719 373C1719 340 1698 316 1668 316Z"/><path class="ink" d="M1880 217H1983L1926 447H1826Z M1874 472C1898 472 1913 488 1913 512C1913 544 1881 575 1850 575C1824 575 1808 559 1808 535C1808 503 1841 472 1874 472Z"/></g></svg> <span class="bar" aria-hidden="true"></span> <span class="imprint">A drei.gg imprint</span></p>
+    <nav class="foot-nav" aria-label="Footer">
+      <a href="/manifesto/">Manifesto</a>
+      <a href="/#apps">Apps</a>
+      <a href="https://github.com/drei-gg/sevenanddone">Source (GitHub)</a>
+      <a href="https://drei.gg">drei.gg</a>
+    </nav>
+  </div>
+  <p class="filed">Thought of on 9 November 2026. Filed from Aeris. <span>This page has no scripts, cookies or trackers.</span></p>
 </footer>
 
 </body>
