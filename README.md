@@ -24,6 +24,17 @@ python3 -m http.server 8777   # then open http://localhost:8777
 
 It's served from DigitalOcean App Platform as a static site; every push to `main` deploys.
 
+## App pages
+
+Each app gets `/apps/<slug>/` (landing, Before you buy, free vs $7, support), plus `privacy/` and `terms/` for the store listings. They're stamped once from `apps/_template` and hand-edited from then on:
+
+```sh
+python3 apps/new.py qr --name "QR" --store "7&D QR Code Kit" --what "Read and make QR codes. Warns you about scams, for free."
+python3 apps/new.py --check   # lists the [bracketed] copy still to write
+```
+
+The icon comes from `brand/apps/<slug>/icon.svg`.
+
 ## License
 
 Copyright © 2026 Drei Guintu. The code is free software under the [GNU GPL v3](LICENSE): if you can build it, it's yours. We sell the app built, signed and kept up to date.

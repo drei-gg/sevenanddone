@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 838 838" role="img" aria-label="Fast Tracker — centred F with separated red quote bars">
+  <rect width="838" height="838" fill="#161513"/>
+  <defs><clipPath id="quote-band"><rect y="393" width="838" height="214.5"/></clipPath><mask id="stem-breaks" maskUnits="userSpaceOnUse" x="0" y="0" width="838" height="838">
+    <rect width="838" height="838" fill="white"/>
+    <rect y="358.660548" width="838" height="34.339452" fill="black"/>
+    <rect y="607.5" width="838" height="34.339452" fill="black"/>
+  </mask></defs>
+  <path fill="#f3efe6" mask="url(#stem-breaks)" d="M381 161H713L701 198H525C501 198 501 232 525 232H691L680 267H504C481 267 481 301 504 301H668L656 337H375Q363 337 359 351L262 686H119L237 287C264 204 322 161 381 161Z"/>
+  <path fill="#ff5d50" clip-path="url(#quote-band)" d="M381 161H713L701 198H525C501 198 501 232 525 232H691L680 267H504C481 267 481 301 504 301H668L656 337H375Q363 337 359 351L262 686H119L237 287C264 204 322 161 381 161Z"/>
+  <path fill="#ff5d50" d="M382.588806 393H525.588806L463.479851 607.5H320.479851Z"/>
+</svg>
