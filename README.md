@@ -10,7 +10,7 @@ Somewhere right now, someone is paying $7.99 a week to delete duplicate photos f
 - **$7, once.** €7 or £7 where that's worth more; less where $7 is a lot of money.
 - **7 months**: every app gets at least one update every seven months. Critical fixes ship when they're found.
 
-The full manifesto, fine print included: **[sevenanddone.drei.gg](https://sevenanddone.drei.gg)**
+The full manifesto, fine print included: **[sevenanddone.app](https://sevenanddone.app)**
 
 ## This repo
 
