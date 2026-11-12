@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" role="img" aria-label="Document Scanner — brackets and scan dash">
+  <title>Document Scanner — Quicksilver Italic brackets and em dash</title>
+  <rect width="192" height="192" fill="#f3efe6"/>
+  <defs><mask id="scan-clearance" maskUnits="userSpaceOnUse" x="0" y="0" width="192" height="192">
+    <rect width="192" height="192" fill="white"/>
+    <path d="M173.686 83.6L167.052 108.4H18.314L24.948 83.6Z" fill="black" stroke="black" stroke-width="16" stroke-linejoin="miter"/>
+  </mask></defs>
+  <g mask="url(#scan-clearance)">
+  <g fill="#161513" transform="translate(20.825 139.4) scale(.062 -.062)">
+    <path d="M1179 1600 1072 1200H772L504 200H804L696 -200H-4L479 1600Z"/>
+    <path transform="translate(1250 0)" d="M1179 1600 696 -200H-4L104 200H404L672 1200H372L479 1600Z"/>
+  </g>
+  </g>
+  <path fill="#ff5d50" transform="translate(22.406 139.4) scale(.062 -.062)" d="M2440 900 2333 500H-66L41 900Z"/>
+</svg>

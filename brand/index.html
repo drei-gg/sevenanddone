@@ -11,7 +11,7 @@
 <body>
 <header class="mast">
   <div><b>drei.gg</b><i></i>Seven and Done</div>
-  <nav aria-label="Brand guide"><a href="#marks">Marks</a><a href="#colour">Colour</a><a href="#type">Type</a></nav>
+  <nav aria-label="Brand guide"><a href="#marks">Marks</a><a href="#app-icons">App icons</a><a href="#colour">Colour</a><a href="#type">Type</a></nav>
 </header>
 <main>
   <h1>Visual identity</h1>
@@ -29,10 +29,6 @@
   <section id="marks">
     <div class="section-line"><h2>The marks</h2><a href="wordmark.svg" download>Full wordmark SVG ↓</a></div>
     <div class="mark-proofs">
-      <figure class="construction">
-        <button class="zoom-trigger" type="button" popovertarget="zoom-construction" aria-label="Enlarge squaremark construction"><img src="studies/square-tangents.svg" alt="Construction circles on the dollar, ampersand and D, with horizontal guides across both rows and diagonals along the seven."></button>
-        <figcaption><h3>Squaremark construction</h3><p>The two rails are each 99 units thick. The circles follow the curves of the dollar, ampersand and D. The seven crosses the lower rail with a soft shadow on either side.</p><a href="studies/square-tangents.svg">Open tangent study ↗</a></figcaption>
-      </figure>
       <div class="secondary-marks">
         <figure>
           <figcaption><h3>Short wordmark</h3><p>Use the short signature where the project name already appears.</p></figcaption>
@@ -54,6 +50,23 @@
         <div><h4 class="label">Enthusiasm</h4><p>These <button class="zoom-trigger inline-wordmark" type="button" popovertarget="zoom-full" aria-label="Enlarge full wordmark"><img src="wordmark.svg" alt="#$7&amp;D!"></button> apps are so cool.</p></div>
       </div>
     </section>
+  </section>
+
+  <section id="app-icons">
+    <div class="section-line"><h2>App icons</h2></div>
+    <div id="approved-icons"><div class="icon-grid"><figure class="icon-card">
+  <button type="button" class="zoom-trigger" popovertarget="zoom-qr-finder-q" aria-label="Enlarge QR Code Kit"><img class="icon-large" src="apps/qr/icon.svg" alt="QR Code Kit"></button>
+  <figcaption><img src="apps/qr/icon.svg" width="48" height="48" alt=""><div><h4>QR Code Kit</h4></div></figcaption>
+</figure><figure class="icon-card">
+  <button type="button" class="zoom-trigger" popovertarget="zoom-fast-pause" aria-label="Enlarge Fast Tracker"><img class="icon-large" src="apps/fast/icon.svg" alt="Fast Tracker"></button>
+  <figcaption><img src="apps/fast/icon.svg" width="48" height="48" alt=""><div><h4>Fast Tracker</h4></div></figcaption>
+</figure><figure class="icon-card">
+  <button type="button" class="zoom-trigger" popovertarget="zoom-alarm-bang" aria-label="Enlarge Alarm"><img class="icon-large" src="apps/alarm/icon.svg" alt="Alarm"></button>
+  <figcaption><img src="apps/alarm/icon.svg" width="48" height="48" alt=""><div><h4>Alarm</h4></div></figcaption>
+</figure><figure class="icon-card">
+  <button type="button" class="zoom-trigger" popovertarget="zoom-scanner" aria-label="Enlarge Document Scanner"><img class="icon-large" src="apps/scanner/icon.svg" alt="Document Scanner"></button>
+  <figcaption><img src="apps/scanner/icon.svg" width="48" height="48" alt=""><div><h4>Document Scanner</h4></div></figcaption>
+</figure></div></div>
   </section>
 
   <section id="colour"><div class="section-line"><h2>Paper &amp; ink</h2><a href="tokens.css" download>Design tokens ↓</a></div>
@@ -92,23 +105,35 @@
 </main>
 <footer><b>Seven and Done</b><span>A drei.gg imprint</span></footer>
 <section id="zoom-full" class="lightbox sd-theme" data-theme="light" popover="auto" role="dialog" aria-labelledby="zoom-full-title">
-  <header><h2 id="zoom-full-title">Full wordmark</h2><label><input type="checkbox"> 2×</label><button type="button" popovertarget="zoom-full" popovertargetaction="hide">Close</button></header>
+  <header><h2 id="zoom-full-title">Full wordmark</h2><label><input type="checkbox" class="zoom-level"> 2×</label><button type="button" popovertarget="zoom-full" popovertargetaction="hide">Close</button></header>
   <div class="zoom-stage"><img src="wordmark.svg" alt="Full wordmark"></div>
 </section>
 <section id="zoom-square" class="lightbox sd-theme" data-theme="light" popover="auto" role="dialog" aria-labelledby="zoom-square-title">
-  <header><h2 id="zoom-square-title">Squaremark</h2><label><input type="checkbox"> 2×</label><button type="button" popovertarget="zoom-square" popovertargetaction="hide">Close</button></header>
+  <header><h2 id="zoom-square-title">Squaremark</h2><label><input type="checkbox" class="zoom-level"> 2×</label><button type="button" popovertarget="zoom-square" popovertargetaction="hide">Close</button></header>
   <div class="zoom-stage"><img src="stack.svg" alt="Squaremark"></div>
 </section>
 <section id="zoom-short" class="lightbox sd-theme" data-theme="light" popover="auto" role="dialog" aria-labelledby="zoom-short-title">
-  <header><h2 id="zoom-short-title">Short wordmark</h2><label><input type="checkbox"> 2×</label><button type="button" popovertarget="zoom-short" popovertargetaction="hide">Close</button></header>
+  <header><h2 id="zoom-short-title">Short wordmark</h2><label><input type="checkbox" class="zoom-level"> 2×</label><button type="button" popovertarget="zoom-short" popovertargetaction="hide">Close</button></header>
   <div class="zoom-stage"><img src="short.svg" alt="Short wordmark"></div>
 </section>
-<section id="zoom-construction" class="lightbox sd-theme" data-theme="light" popover="auto" role="dialog" aria-labelledby="zoom-construction-title">
-  <header><h2 id="zoom-construction-title">Squaremark construction</h2><label><input type="checkbox"> 2×</label><button type="button" popovertarget="zoom-construction" popovertargetaction="hide">Close</button></header>
-  <div class="zoom-stage"><img src="studies/square-tangents.svg" alt="Squaremark construction"></div>
-</section>
 <section id="zoom-dark" class="lightbox sd-theme" data-theme="dark" popover="auto" role="dialog" aria-labelledby="zoom-dark-title">
-  <header><h2 id="zoom-dark-title">Dark edition wordmark</h2><label><input type="checkbox"> 2×</label><button type="button" popovertarget="zoom-dark" popovertargetaction="hide">Close</button></header>
+  <header><h2 id="zoom-dark-title">Dark edition wordmark</h2><label><input type="checkbox" class="zoom-level"> 2×</label><button type="button" popovertarget="zoom-dark" popovertargetaction="hide">Close</button></header>
   <div class="zoom-stage"><img src="wordmark-dark.svg" alt="Dark edition wordmark"></div>
+</section>
+<section id="zoom-qr-finder-q" class="lightbox sd-theme" data-theme="light" popover="auto" role="dialog" aria-labelledby="zoom-qr-finder-q-title">
+  <header><h2 id="zoom-qr-finder-q-title">QR Code Kit — Finder Q</h2><label><input type="checkbox" class="zoom-level"> 2×</label><button type="button" popovertarget="zoom-qr-finder-q" popovertargetaction="hide">Close</button></header>
+  <div class="zoom-stage"><img src="apps/qr/icon.svg" alt="QR Code Kit — Finder Q"></div>
+</section>
+<section id="zoom-alarm-bang" class="lightbox sd-theme" data-theme="light" popover="auto" role="dialog" aria-labelledby="zoom-alarm-bang-title">
+  <header><h2 id="zoom-alarm-bang-title">Alarm app — Ringing bang</h2><label><input type="checkbox" class="zoom-level"> 2×</label><button type="button" popovertarget="zoom-alarm-bang" popovertargetaction="hide">Close</button></header>
+  <div class="zoom-stage"><img src="apps/alarm/icon.svg" alt="Alarm app — Ringing bang"></div>
+</section>
+<section id="zoom-fast-pause" class="lightbox sd-theme" data-theme="light" popover="auto" role="dialog" aria-labelledby="zoom-fast-pause-title">
+<header><h2 id="zoom-fast-pause-title">Fast Tracker</h2><label><input type="checkbox" class="zoom-level"> 2×</label><button type="button" popovertarget="zoom-fast-pause" popovertargetaction="hide">Close</button></header>
+<div class="zoom-stage"><img src="apps/fast/icon.svg" alt="Pause"></div>
+</section>
+<section id="zoom-scanner" class="lightbox sd-theme" data-theme="light" popover="auto" role="dialog" aria-labelledby="zoom-scanner-title">
+  <header><h2 id="zoom-scanner-title">Document Scanner</h2><label><input type="checkbox" class="zoom-level"> 2×</label><button type="button" popovertarget="zoom-scanner" popovertargetaction="hide">Close</button></header>
+  <div class="zoom-stage"><img src="apps/scanner/icon.svg" alt="Document Scanner — brackets and red scan line"></div>
 </section>
 </body></html>

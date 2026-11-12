@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Hero glyph for the halftone slot: greys turn into ink dots, #ff4d42 turns into red dots. -->
+  <g fill="#6e6e6e">
+    <path fill-rule="evenodd" d="M4 4h30v30H4zM10 10v18h18V10z"/><rect x="14" y="14" width="10" height="10"/>
+    <path fill-rule="evenodd" d="M66 4h30v30H66zM72 10v18h18V10z"/><rect x="76" y="14" width="10" height="10"/>
+    <path fill-rule="evenodd" d="M4 66h30v30H4zM10 72v18h18V72z"/><rect x="14" y="76" width="10" height="10"/>
+  </g>
+  <g fill="#8a8a8a"><rect x="42" y="6" width="8" height="8"/><rect x="54" y="10" width="8" height="8"/><rect x="42" y="22" width="8" height="8"/><rect x="6" y="42" width="8" height="8"/><rect x="18" y="46" width="8" height="8"/><rect x="42" y="42" width="8" height="8"/><rect x="54" y="38" width="8" height="8"/><rect x="66" y="42" width="8" height="8"/><rect x="90" y="42" width="6" height="8"/><rect x="42" y="58" width="8" height="8"/><rect x="42" y="74" width="8" height="8"/><rect x="54" y="86" width="8" height="8"/><rect x="66" y="58" width="8" height="8"/></g>
+  <rect x="74" y="74" width="20" height="20" fill="#ff4d42"/>
+</svg>

@@ -14,7 +14,7 @@ The full manifesto, fine print included: **[sevenanddone.app](https://sevenanddo
 
 ## This repo
 
-The site: a home page, the manifesto and one stylesheet, with no build step, no scripts and no cookies. The brand faces (Barlow Condensed Black, Noto Sans, Noto Sans Mono, all OFL) are served from this site's own `brand/fonts`, so your browser never calls anyone else. A brand that promises no tracking shouldn't make your browser call anyone on its first page.
+The site: a home page, the manifesto and one stylesheet, with no build step and no cookies. The one script, `theme.js`, remembers the Auto/Light/Dark pick in the browser's local storage so it carries from page to page; nothing leaves the device. The brand faces (Barlow Condensed Black, Noto Sans, Noto Sans Mono, all OFL) are served from this site's own `brand/fonts`, so your browser never calls anyone else. A brand that promises no tracking shouldn't make your browser call anyone on its first page.
 
 `brand/` is the visual identity: the outlined marks, the type and colour tokens, and a specimen page at `/brand/`.
 

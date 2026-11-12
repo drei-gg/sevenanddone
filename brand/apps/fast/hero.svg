@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Hero glyph for the halftone slot: the fasting ring, sixteen of twenty-four hours done, in red. -->
+  <circle cx="50" cy="50" r="38" fill="none" stroke="#c4c4c4" stroke-width="13"/>
+  <path fill="none" stroke="#ff4d42" stroke-width="13" d="M50 12A38 38 0 1 1 17.09 69"/>
+  <circle cx="17.09" cy="69" r="9" fill="#5e5e5e"/>
+  <g fill="#6e6e6e"><rect x="47" y="27" width="6" height="7"/><rect x="66" y="47" width="7" height="6"/><rect x="47" y="66" width="6" height="7"/><rect x="27" y="47" width="7" height="6"/></g>
+  <path fill="none" stroke="#6e6e6e" stroke-width="5" stroke-linecap="square" d="M50 50V36M50 50l9 9"/>
+</svg>

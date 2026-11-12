@@ -12,7 +12,8 @@
 <meta property="og:type" content="website">
 <meta name="color-scheme" content="light dark">
 <meta name="robots" content="noindex"><!--@TEMPLATE-ONLY-->
-<link rel="icon" href="/brand/apps/{{SLUG}}/icon.svg" type="image/svg+xml">
+<link rel="icon" media="(prefers-color-scheme: light)" href="/brand/apps/{{SLUG}}/icon.svg" type="image/svg+xml">
+<link rel="icon" media="(prefers-color-scheme: dark)" href="/brand/apps/{{SLUG}}/icon-light.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/style.css">
 </head>
 <body>
@@ -20,6 +21,7 @@
 <input class="theme-radio" type="radio" name="theme" id="t-auto" checked aria-label="Theme: follow system">
 <input class="theme-radio" type="radio" name="theme" id="t-light" aria-label="Theme: light">
 <input class="theme-radio" type="radio" name="theme" id="t-dark" aria-label="Theme: dark">
+<script src="/theme.js"></script>
 
 <header class="top wrap">
   <a class="brand" href="/" aria-label="Seven and Done, home">
@@ -46,7 +48,8 @@
 <!-- The app. Status is one of: Vetting, Building, Testing, Out now. When it's out, swap the
      "Coming to the App Store" span for a link to the listing. -->
 <section class="app-hero wrap" aria-labelledby="app-h">
-  <img class="app-icon" src="/brand/apps/{{SLUG}}/icon.svg" width="192" height="192" alt="">
+  <div class="app-hero-main">
+  <img class="app-icon ic-l" src="/brand/apps/{{SLUG}}/icon.svg" width="192" height="192" alt=""><img class="app-icon ic-d" src="/brand/apps/{{SLUG}}/icon-light.svg" width="192" height="192" alt="">
   <div class="app-hero-copy">
     <p class="app-kicker"><span class="chip chip-live">{{STATUS}}</span><span>{{PLATFORM}}</span></p>
     <h1 id="app-h" class="app-name"><small>#$7&amp;D!</small>{{NAME}}</h1>
@@ -57,6 +60,29 @@
       <a class="btn" href="#before">Before you buy ↓</a>
     </div>
     <p class="app-meta">On the App Store as {{STORE_NAME}} · English</p>
+  </div>
+  </div>
+  <div class="slot">
+    <figure class="field" aria-hidden="true">
+      <svg class="defs" width="0" height="0" aria-hidden="true" focusable="false">
+  <filter id="halftone" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+  <feColorMatrix in="SourceGraphic" type="matrix" values="0.3 0.59 0.11 0 0  0.3 0.59 0.11 0 0  0.3 0.59 0.11 0 0  0 0 0 1 0" result="lum"/>
+  <feComponentTransfer in="lum" result="thr"><feFuncR type="linear" slope="40" intercept="-19.5"/></feComponentTransfer>
+  <feColorMatrix in="thr" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -1 0 0 0 1" result="inkA"/>
+  <feFlood style="flood-color: var(--ink)" result="inkC"/>
+  <feComposite in="inkC" in2="inkA" operator="in" result="ink"/>
+  <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  8 -8 0 0 -1.2" result="redA"/>
+  <feFlood style="flood-color: var(--red)" result="redC"/>
+  <feComposite in="redC" in2="redA" operator="in" result="redS"/>
+  <feComposite in="redS" in2="inkA" operator="in" result="red"/>
+  <feComposite in="ink" in2="redS" operator="out" result="inkOnly"/>
+  <feMerge result="both"><feMergeNode in="inkOnly"/><feMergeNode in="red"/></feMerge>
+  <feComposite in="both" in2="SourceAlpha" operator="in"/>
+  </filter>
+</svg>
+      <div class="scene"><div class="plate"><img class="glyph" src="/brand/apps/{{SLUG}}/hero.svg" alt=""></div></div>
+    </figure>
+    <p class="slot-cap"><span>On the shelf</span><b>No. <span class="todo">[shelf no.]</span> · {{NAME}}</b><i>{{STATUS}}</i></p>
   </div>
 </section>
 
@@ -155,7 +181,7 @@
       <a href="/#apps">All apps</a>
     </nav>
   </div>
-  <p class="filed">&copy; 2026 Drei Guintu. A drei.gg imprint. <span>This page has no scripts, cookies or trackers.</span></p>
+  <p class="filed">&copy; 2026 Drei Guintu. A drei.gg imprint. <span>No cookies or trackers. One small script remembers your theme, on your device.</span></p>
 </footer>
 
 </body>

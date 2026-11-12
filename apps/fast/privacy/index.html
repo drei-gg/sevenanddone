@@ -7,7 +7,8 @@
 <link rel="canonical" href="https://sevenanddone.app/apps/fast/privacy/">
 <meta name="description" content="The privacy policy for 7&amp;D Fast Tracker: we collect nothing.">
 <meta name="color-scheme" content="light dark">
-<link rel="icon" href="/brand/apps/fast/icon.svg" type="image/svg+xml">
+<link rel="icon" media="(prefers-color-scheme: light)" href="/brand/apps/fast/icon.svg" type="image/svg+xml">
+<link rel="icon" media="(prefers-color-scheme: dark)" href="/brand/apps/fast/icon-light.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/style.css">
 </head>
 <body>
@@ -15,6 +16,7 @@
 <input class="theme-radio" type="radio" name="theme" id="t-auto" checked aria-label="Theme: follow system">
 <input class="theme-radio" type="radio" name="theme" id="t-light" aria-label="Theme: light">
 <input class="theme-radio" type="radio" name="theme" id="t-dark" aria-label="Theme: dark">
+<script src="/theme.js"></script>
 
 <header class="top wrap">
   <a class="brand" href="/" aria-label="Seven and Done, home">
@@ -39,7 +41,7 @@
 <main class="doc wrap">
 
 <header class="doc-head">
-  <a class="doc-app" href="../"><img src="/brand/apps/fast/icon.svg" width="48" height="48" alt=""><span>7&amp;D Fast Tracker</span></a>
+  <a class="doc-app" href="../"><img class="ic-l" src="/brand/apps/fast/icon.svg" width="48" height="48" alt=""><img class="ic-d" src="/brand/apps/fast/icon-light.svg" width="48" height="48" alt=""><span>7&amp;D Fast Tracker</span></a>
   <h1 class="doc-title">Privacy</h1>
   <p class="doc-date">Last updated 12 November 2026. Every change is in the <a href="https://github.com/drei-gg/sevenanddone/commits/main/apps/fast/privacy/index.html">site&rsquo;s public history</a>.</p>
 </header>
@@ -139,7 +141,7 @@
       <a href="/#apps">All apps</a>
     </nav>
   </div>
-  <p class="filed">&copy; 2026 Drei Guintu. A drei.gg imprint. <span>This page has no scripts, cookies or trackers.</span></p>
+  <p class="filed">&copy; 2026 Drei Guintu. A drei.gg imprint. <span>No cookies or trackers. One small script remembers your theme, on your device.</span></p>
 </footer>
 
 </body>

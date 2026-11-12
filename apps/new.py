@@ -54,9 +54,12 @@ def main():
     dest = ROOT / "apps" / a.slug
     if dest.exists():
         sys.exit(f"apps/{a.slug} already exists; edit it by hand")
-    icon = ROOT / "brand" / "apps" / a.slug / "icon.svg"
-    if not icon.exists():
-        print(f"warning: no icon at {icon.relative_to(ROOT)} yet; the pages point there", file=sys.stderr)
+    # icon.svg is the dark tile for the light site, icon-light.svg the cream tile for the dark
+    # site, hero.svg the glyph for the halftone slot.
+    for name in ("icon.svg", "icon-light.svg", "hero.svg"):
+        f = ROOT / "brand" / "apps" / a.slug / name
+        if not f.exists():
+            print(f"warning: no {f.relative_to(ROOT)} yet; the pages point there", file=sys.stderr)
 
     e = lambda s: html.escape(s, quote=True)
     tokens = {

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 838 838" role="img" aria-labelledby="title desc">
+  <title id="title">Cleaner — C tighter tip</title>
+  <desc id="desc">Fuller broom sweep with a tighter left-curling outer right tip, longer handle, and enlarged sparkles.</desc>
+  <rect width="838" height="838" fill="#161513"/>
+  <g fill="#ff5d50">
+    <path transform="translate(190 294) scale(1.15) translate(-190 -294)" d="M190 242C196 279 204 287 238 294C204 301 196 309 190 346C184 309 176 301 142 294C176 287 184 279 190 242Z"/>
+    <path transform="translate(260 193) scale(1.15) translate(-260 -193)" d="M260 163C264 184 269 189 288 193C269 197 264 202 260 223C256 202 251 197 232 193C251 189 256 184 260 163Z"/>
+  </g>
+  <path fill="#f3efe6" d="M441.354 234.253 L472.647 118.354 L620.445 118.354 L589.152 234.253 L700.000 234.253 L660.464 382.051 L549.616 382.051 L609.658 550.000 C626.801 598.000 650.000 669.646 610.000 677.646 H463.517 C509.517 677.646 477.294 629.000 465.294 600.000 L436.181 529.848 L350.537 620.000 C322.537 649.000 291.774 677.646 261.774 677.646 H98.000 C122.000 677.646 221.924 582.000 251.924 550.000 L401.819 382.051 L290.970 382.051 L330.506 234.253 Z"/>
+  <!-- Font coordinates have Y pointing up. This transform includes conversion to SVG,
+       then vertical and horizontal flips about the glyph centre. -->
+  <g transform="translate(419 419) scale(-0.3694937541 0.3694937541) translate(-1064.5 -700)">
+    <path fill="#ff5d50" d="M304 200H1304L1411 600H411Z"/>
+  </g>
+</svg>

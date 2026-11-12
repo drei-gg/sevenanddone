@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Hero glyph for the halftone slot: a grid of photos, the doubled-up ones fading, swept by the red bar. -->
+  <g fill="#6e6e6e"><rect x="4" y="4" width="28" height="28"/><rect x="36" y="4" width="28" height="28"/><rect x="4" y="36" width="28" height="28"/><rect x="68" y="68" width="28" height="28"/><rect x="36" y="68" width="28" height="28"/></g>
+  <g fill="#c8c8c8"><rect x="68" y="4" width="28" height="28"/><rect x="36" y="36" width="28" height="28"/><rect x="68" y="36" width="28" height="28"/><rect x="4" y="68" width="28" height="28"/></g>
+  <g fill="#9a9a9a"><path d="M10 24l7-9 6 7 3-3 4 5z"/><path d="M42 24l7-9 6 7 3-3 4 5z"/><path d="M10 56l7-9 6 7 3-3 4 5z"/><path d="M74 88l7-9 6 7 3-3 4 5z"/><path d="M42 88l7-9 6 7 3-3 4 5z"/></g>
+  <path fill="#ff4d42" d="M58 30h42l-8 14H50z" transform="rotate(-8 75 37)"/>
+  <path fill="#ff4d42" d="M10 60h52l-6 10H4z" transform="rotate(-8 33 65)"/>
+</svg>

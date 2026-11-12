@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Hero glyph for the halftone slot: a ringing alarm clock, the ring in red. -->
+  <g fill="#7a7a7a"><path d="M18 30a14 14 0 0 1 20-17z"/><path d="M82 30a14 14 0 0 0-20-17z"/></g>
+  <path fill="none" stroke="#6e6e6e" stroke-width="6" stroke-linecap="square" d="M30 84l-6 9M70 84l6 9"/>
+  <circle cx="50" cy="56" r="33" fill="#6e6e6e"/>
+  <circle cx="50" cy="56" r="26" fill="#d2d2d2"/>
+  <path fill="none" stroke="#5e5e5e" stroke-width="5" stroke-linecap="square" d="M50 56V38M50 56l11 8"/>
+  <circle cx="50" cy="56" r="4" fill="#5e5e5e"/>
+  <g fill="none" stroke="#ff4d42" stroke-width="5" stroke-linecap="square"><path d="M10 40a44 44 0 0 0 0 32M3 34a54 54 0 0 0 0 44M90 40a44 44 0 0 1 0 32M97 34a54 54 0 0 1 0 44"/></g>
+</svg>
