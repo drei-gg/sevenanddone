@@ -39,7 +39,7 @@ def main():
     ap.add_argument("--what", help="one sentence: what it does")
     ap.add_argument("--status", default="Building", help="Vetting, Building, Testing or Out now")
     ap.add_argument("--email", default="support@sevenanddone.app")
-    ap.add_argument("--platform", default="iPhone · iOS 17 or later")
+    ap.add_argument("--platform", default="iPhone · iOS 17 or later · Android later")
     ap.add_argument("--updated", default=datetime.date.today().strftime("%-d %B %Y"))
     a = ap.parse_args()
 
