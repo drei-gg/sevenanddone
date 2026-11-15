@@ -5,7 +5,7 @@ Simple apps, paid for once.
 Somewhere right now, someone is paying $7.99 a week to delete duplicate photos from their own phone. We think that's absurd. So here's the deal:
 
 - **7 apps** to start, each replacing something that charges you rent.
-- **7 engineering days** each, give or take. A measure of effort, not a stopwatch.
+- **7-day gauntlet**: seven days to investigate, challenge, and prototype. If an idea can't prove itself, it doesn't make the cut.
 - **7-day trial** from the moment you install. No sign-up, no card, no charge you didn't choose.
 - **$7, once.** €7 or £7 where that's worth more; less where $7 is a lot of money.
 - **7 months**: every app gets at least one update every seven months. Critical fixes ship when they're found.

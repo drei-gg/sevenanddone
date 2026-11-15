@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192">
+<title>Vault — square vault door</title>
+<g transform="translate(19 0) skewX(-10)">
+<rect x="36" y="38" width="120" height="116" rx="9" fill="none" stroke="#9a9a9a" stroke-width="12"/>
+<path d="M30 62h12M30 130h12" stroke="#9a9a9a" stroke-width="17"/>
+<circle cx="96" cy="96" r="27" fill="none" stroke="#9a9a9a" stroke-width="9"/>
+<path d="M96 69v54M69 96h54" stroke="#9a9a9a" stroke-width="8"/>
+<circle cx="96" cy="96" r="10" fill="#ff4d42"/>
+<path d="M139 82v28" stroke="#ff4d42" stroke-width="9"/>
+</g></svg>
