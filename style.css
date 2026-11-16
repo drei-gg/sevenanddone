@@ -146,18 +146,19 @@ b, strong { font-weight: 800; }
 .glyph { display: block; width: 100%; height: auto; }
 
 /* The home slot is a carousel of every app's hero. CSS only: it cycles on its own, pauses under the pointer, and a picked dot holds that app. */
-.carousel .scene, .carousel .slot-cap { animation: 30s linear infinite; }
+.carousel .scene, .carousel .slot-cap { animation: 35s linear infinite; }
 .carousel .scene { opacity: 0; animation-name: hero-fade; }
 .carousel .slot-cap { visibility: hidden; animation-name: hero-cap; text-decoration: none; color: inherit; }
 .carousel .slot-cap:hover b { color: var(--red); }
-.carousel .s-2 { animation-delay: -25s; }
-.carousel .s-3 { animation-delay: -20s; }
-.carousel .s-4 { animation-delay: -15s; }
-.carousel .s-5 { animation-delay: -10s; }
-.carousel .s-6 { animation-delay: -5s; }
+.carousel .s-2 { animation-delay: -30s; }
+.carousel .s-3 { animation-delay: -25s; }
+.carousel .s-4 { animation-delay: -20s; }
+.carousel .s-5 { animation-delay: -15s; }
+.carousel .s-6 { animation-delay: -10s; }
+.carousel .s-7 { animation-delay: -5s; }
 .carousel:hover .scene, .carousel:hover .slot-cap, .carousel:focus-within .scene, .carousel:focus-within .slot-cap { animation-play-state: paused; }
-@keyframes hero-fade { 0% { opacity: 0; } 2%, 16.6667% { opacity: 1; } 18.6667%, 100% { opacity: 0; } }
-@keyframes hero-cap { 0%, 17.6667% { visibility: visible; } 17.7667%, 100% { visibility: hidden; } }
+@keyframes hero-fade { 0% { opacity: 0; } 1.7143%, 14.2857% { opacity: 1; } 16%, 100% { opacity: 0; } }
+@keyframes hero-cap { 0%, 15.1429% { visibility: visible; } 15.2429%, 100% { visibility: hidden; } }
 .hero-pick { position: absolute; opacity: 0; pointer-events: none; }
 .vh { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 .hero-dots { position: absolute; top: 12px; right: 12px; z-index: 2; display: flex; gap: 6px; }
@@ -165,8 +166,8 @@ b, strong { font-weight: 800; }
 .hero-dots label:hover { background: var(--muted); }
 /* A picked app stops the cycle and stays. */
 .carousel:has(.hero-pick:checked) .scene, .carousel:has(.hero-pick:checked) .slot-cap { animation: none; }
-.carousel:has(#hp-1:checked) .s-1, .carousel:has(#hp-2:checked) .s-2, .carousel:has(#hp-3:checked) .s-3, .carousel:has(#hp-4:checked) .s-4, .carousel:has(#hp-5:checked) .s-5, .carousel:has(#hp-6:checked) .s-6 { opacity: 1; visibility: visible; }
-.carousel:has(#hp-1:checked) [for="hp-1"], .carousel:has(#hp-2:checked) [for="hp-2"], .carousel:has(#hp-3:checked) [for="hp-3"], .carousel:has(#hp-4:checked) [for="hp-4"], .carousel:has(#hp-5:checked) [for="hp-5"], .carousel:has(#hp-6:checked) [for="hp-6"] { background: var(--red); border-color: var(--red); }
+.carousel:has(#hp-1:checked) .s-1, .carousel:has(#hp-2:checked) .s-2, .carousel:has(#hp-3:checked) .s-3, .carousel:has(#hp-4:checked) .s-4, .carousel:has(#hp-5:checked) .s-5, .carousel:has(#hp-6:checked) .s-6, .carousel:has(#hp-7:checked) .s-7 { opacity: 1; visibility: visible; }
+.carousel:has(#hp-1:checked) [for="hp-1"], .carousel:has(#hp-2:checked) [for="hp-2"], .carousel:has(#hp-3:checked) [for="hp-3"], .carousel:has(#hp-4:checked) [for="hp-4"], .carousel:has(#hp-5:checked) [for="hp-5"], .carousel:has(#hp-6:checked) [for="hp-6"], .carousel:has(#hp-7:checked) [for="hp-7"] { background: var(--red); border-color: var(--red); }
 .carousel:has(.hero-pick:focus-visible) .hero-dots { outline: 3px solid var(--red); outline-offset: 3px; }
 @media (prefers-reduced-motion: reduce) {
   .carousel .scene, .carousel .slot-cap { animation: none; }
